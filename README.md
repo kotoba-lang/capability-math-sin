@@ -2,17 +2,14 @@
 
 Atomic authority package for `math/sin`.
 
-- imports: `#{:sin}`
-- effects: `#{:pure-compute}`
-- default policy: `:autonomous`
+- provider status: **reference-implemented**
 - semantic definition CID: `bafyreihwvwupzz3hlfsjlnlgsegwywfuwclpbld5upvxfqcomq65e4kub4`
-- hash contract CID: `bafkreiflhj3fslsbh7okdas2fzlhmogai64x6p3lkla6gtr7berbp7ftvi`
-- provider status: `contract-only`
+- artifact: `artifacts/provider.core.wasm` (sha256 `609d75432c40f5d838f8c24bf9e0702fa5ae55ebedce578692456503cc5e9684`)
+- JVM reference: `kotoba.capability.math.sin.provider`
+- host ABI: module `kotoba`, field `sin`, f32→f32
 
-The repository name is a discovery alias. The semantic definition CID
-is the immutable import identity. Importing it does not grant runtime
-authority: Tamaki must request it explicitly and Kototama must admit
-the sealed envelope.
+Definition CID is the import identity. `:signature :reference-unsigned`
+is reference packaging; production signing is follow-up.
 
 ```sh
 clojure -M:test
