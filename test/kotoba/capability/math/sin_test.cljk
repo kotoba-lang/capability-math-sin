@@ -1,5 +1,5 @@
 (ns kotoba.capability.math.sin-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [clojure.java.io :as io]
             [kotoba.capability.math.sin :as capability]
             [kotoba.capability.math.sin.provider :as provider]
